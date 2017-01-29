@@ -13,9 +13,9 @@
 ### Syllabus
 - expectations
 - long term goals
-- on github
 - contacting me
 - contacting each other
+- canvas
 
 ### Circle up! 2 whip arounds.
 1. Name, Class, Major, Hometown, a movie you've seen 5+ times. 
@@ -45,24 +45,17 @@ Why HTML? What does HTML do for us?
 Why CSS? What does CSS do for us?
 
 ### Mini-lesson 1 - Basic HTML
-- Show opening and closing tags.
+- anatomy of a tag. Opening and closing, attributes.
 - html sandwich analogy.
 - Focus that all content needs to be inside tags.
+- focus on common tags (head, h1, title, body, paragraph, img, lists)
+
+- HTML Tag Sorting Game
+
 - show how to write html head tag, add a title
 - show how to make the body.
-- show how to open the page in the browser from sublime.
-
-####Exercise 1 
-*Build a basic site, announcing yourself to the world*
-- Add a heading to the page, say something like "hello world" 
-- Create a paragraph saying who you are.
-- Make an ordered list of something, use at least 3 items. ex. favorite tv show.
-- Make an ordered list of something, use at least 3 items. ex. places I've travelled.
-
-##@ Mini-Lesson 2
+- show how to do an img
 - show how to do a link
-- show how to do an image
-
 ```html
 <img src="url">
 ```
@@ -70,29 +63,56 @@ Why CSS? What does CSS do for us?
 <a href="url">link text</a>
 ```
 
+####Exercise 1 
+*Build a "hello world" meme site. Show example*
+https://thimbleprojects.org/awdriggs/194496
+- Add a heading to the page, this should be your opening meme line. 
+- insert your favorite meme image
+- Add another heading, this should be your ending meme line.
+- Bonus, add a link to another page.
+
+### Mini-Lesson 2
+- Anatomy of a CSS Rule
+```
+   selector {
+      property: value;
+   }
+```
+- There can be multiple properties inside a single rule.
+
+-Show how to add style to the meme
+-[example](https://thimbleprojects.org/awdriggs/194501)
+```
+   body {
+       font-family: "Open Sans", sans-serif;
+   }
+
+#first, #second {
+ font-family: impact, sans-serif;
+   color: white;
+}
+
+#first {
+/*absolute position takes something out of the page flow
+it is positioned based off the parent element, in this case the page itself.*/
+  position:absolute;
+    left: 50px;
+}
+
+#second {
+  position: absolute;
+    top: 280px;
+      left: 300px;
+}
+```
 ####Exercise 2
-- Make some text a link to something else
-- Add an image somewhere on your site.
+*Add some style to your meme with css*
+-Change the font
+-Change the color
+-position the text
+-Bonus, add some background color
 
-### Mini-Lesson 3 
-- linking to other files
-- linking to css file
-```html
-<link rel="stylesheet" type="text/css" href="styles.css">
-```
-- add some basic styling on html tags
-```html
-<a href="otherpage.html">Link to antoher page</a>
-```
--show how to target an html element.
-
-#### Exercise 3
-*Add to your site from ex1*
-- An external stylesheet.
-- change the heading color.
-- change the size of p font
-
-### Mini-Lesson 4
+### Mini-Lesson 3
 - Using the inspect from chrome 
 - right click
 - inspect 
